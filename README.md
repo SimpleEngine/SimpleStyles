@@ -48,19 +48,21 @@ Features
 Naming Conventions
 -------
 
-CSS class and id names use the hyphen .class and .class-name .class-long-name
+Class and ID names use the hyphen (ie. .class, .class-name, .class-long-name)
 
 SimpleStyles uses an object naming convention. Which is very similiar to a structural naming convention. Basically, 
 you name an element for what its purpose is, not for its properties. For example, if we were to think of 
 an element as an animal such as a bear, we wouldn't call it .four-paws-with-1-body (as this describes its properties). 
 We would call it .bear (what it is) and include the properties inside the class.
 
-This also makes it really to extend the class. We could make differnt types of bears such as .bear.polar which
+This also makes it really to extend the class. We could make different types of bears such as .bear.polar which
 could add the polar bears properties to the class. Or .bear.grizzly and so on
 
 Let's look at a quick real world example. Let's say we wanted a 4 column system. We would create a .grid class 
 (this is named after its purpose and what it is) We could then give that grid the properties it needs. Next we
 could great a class .row (for each row) and so on.
+
+Let's look at other use practices
 
 Bad Examples:
 
@@ -79,5 +81,4 @@ Good Examples:
 It's also based on the principle that styling is done using classes not IDs. Whereas IDs are reserved for JavaScript.
 This makes it very easy to know which elements JavaScript is referencing. CSS ID's were never meant to be 
 re-used in a page. So sticking to classes is better for a Object-Oriented approach.
-
 
