@@ -201,6 +201,10 @@ hr {
 	padding: 0px;
 	margin: 10px;
 }
+.block.demonstration {
+	margin-left: -60px;
+	background: #eee;
+}
 
 [class*="span"].primary { 
 	background: #b2dc98;
