@@ -32,8 +32,9 @@ What makes SimpleStyles better?
 If you want a perfect css theme out of the box, Twitter Bootstap is better.
 Or if you want a nice granular OOCSS framework, OOCSS.org is the way to go.
 
-If you like the 12 grid system, but want to be able to easily drop a flexible 12 grid layout inside of another one, 
-then this is the framework for you.
+If you like the 12 grid system (that Twitter Bootstap uses) but want to be able to easily extend elements and 
+drop a flexible 12 grid layout inside of another one, but not worry about messing up your grid's styles 
+(like the OOCSS framework allows), then this is the framework for you.
 
 Features
 -------
