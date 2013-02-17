@@ -1,0 +1,216 @@
+/*
+ * SimpleStyles Grid
+ *
+ * Copyright 2013 Simple Engine Media, Inc
+ *
+ * Super simple grid that does what it is designed to do and nothing more. 
+ *
+ * .row - creates row 
+ * .colspan - set the number of columns to span
+ * .offset - set the number of columns to offset
+ * .block - add gutter
+ * .module - module element that goes inside colspan or block
+ * .inner - extends module
+ *
+ * container, row, offset grid naming convention from twitter bootstrap
+ * Gutter free. To add a gutter use another div inside the colspan called .block
+ *
+ * Coupled together by Jonathan Whiting
+ *
+ */
+
+.container {
+	width: 960px;
+	margin: 0 auto; 
+}
+.row {
+	*zoom: 1;
+}
+.row:before,
+.row:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+.row:after {
+	clear: both;
+}
+[class*="colspan"] {
+	float: left;
+	min-height: 1px;
+	margin-left: 0px;
+}
+.colspan12 {
+	width: 960px;
+}
+.colspan11 {
+	width: 880px;
+}
+.colspan10 {
+	width: 800px;
+}
+.colspan9 {
+	width: 720px;
+}
+.colspan8 {
+	width: 640px;
+}
+.colspan7 {
+	width: 560px;
+}
+.colspan6 {
+	width: 480px;
+}
+.colspan5 {
+	width: 400px;
+}
+.colspan4 {
+	width: 320px;
+}
+.colspan3 {
+	width: 240px;
+}
+.colspan2 {
+	width: 160px;
+}
+.colspan1 {
+	width: 80px;
+}
+.offset12 {
+	margin-left: 960px;
+}
+.offset11 {
+	margin-left: 880px;
+}
+.offset10 {
+	margin-left: 800px;
+}
+.offset9 {
+	margin-left: 720px;
+}
+.offset8 {
+	margin-left: 640px;
+}
+.offset7 {
+	margin-left: 560px;
+}
+.offset6 {
+	margin-left: 480px;
+}
+.offset5 {
+	margin-left: 400px;
+}
+.offset4 {
+	margin-left: 320px;
+}
+.offset3 {
+	margin-left: 240px;
+}
+.offset2 {
+	margin-left: 160px;
+}
+.offset1 {
+	margin-left: 80px;
+}
+.row.fluid {
+	width: 100%;
+	*zoom: 1;
+}
+.row.fluid:before,
+.row.fluid:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+.row.fluid:after {
+	clear: both;
+}
+.row.fluid [class*="colspan"] {
+	display: block;
+	width: 100%;
+	/** Set the element width by the border property, just in case someone adds a border to this element. **/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+}
+.row.fluid .colspan12 {
+	width: 100%;
+}
+.row.fluid .colspan11 {
+	width: 91.66666666666667%;
+}
+.row.fluid .colspan10 {
+	width: 83.33333333333333%;
+}
+.row.fluid .colspan9 {
+	width: 75%;
+}
+.row.fluid .colspan8 {
+	width: 66.6666666666667%;
+}
+.row.fluid .colspan7 {
+	width: 58.33333333333333%;
+}
+.row.fluid .colspan6 {
+	width: 50%;
+}
+.row.fluid .colspan5 {
+	width: 41.6666666666667%;
+}
+.row.fluid .colspan4 {
+	width: 33.333333333333%;
+}
+.row.fluid .colspan3 {
+	width: 25%;
+}
+.row.fluid .colspan2 {
+	width: 16.6666666666666666%;
+}
+.row.fluid .colspan1 {
+	width: 8.3333333333333%;
+}
+.row.fluid .offset12 {
+	margin-left: 100%;
+}
+.row.fluid .offset11 {
+	margin-left: 91.66666666666667%;
+}
+.row.fluid .offset10 {
+	margin-left: 83.33333333333333%;
+}
+.row.fluid .offset9 {
+	margin-left: 75%;
+}
+.row.fluid .offset8 {
+	margin-left: 66.6666666666667%;
+}
+.row.fluid .offset7 {
+	margin-left: 58.33333333333333%;
+}
+.row.fluid .offset6 {
+	margin-left: 50%;
+}
+.row.fluid .offset5 {
+	margin-left: 41.6666666666667%;
+}
+.row.fluid .offset4 {
+	margin-left: 33.333333333333%;
+}
+.row.fluid .offset3 {
+	margin-left: 25%;
+}
+.row.fluid .offset2 {
+	margin-left: 16.6666666666666666%;
+}
+.row.fluid .offset1 {
+	margin-left:  8.3333333333333%;
+}
+[class*="colspan"].align-right,
+.row.fluid [class*="colspan"].align-right {
+	float: right;
+}
+[class*="colspan"].align-left,
+.row.fluid [class*="colspan"].align-left {
+	float: left;
+}

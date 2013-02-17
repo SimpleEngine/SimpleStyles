@@ -1,0 +1,147 @@
+/*
+ * SimpleStyles Grid Responsive
+ * Super simple responsive grid extends grid.css
+ *
+ *	SAMPLE SCREEN SIZES
+ *  ------------------
+ *	1200 x 800 (desktop)
+ *	1024 x 768 (tablet - landscape)
+ *	768 x 1024 (tablet - portrait)
+ *	480 x 640 (small tablet or big mobile)
+ *	320 x 480 (mobile)
+ */
+
+/** Tablet Grid **/
+@media (min-width: 768px) and (max-width: 979px) {
+	.row {
+		*zoom: 1;
+	}
+	.row:before,
+	.row:after {
+		display: table;
+		line-height: 0;
+		content: "";
+	}
+	.row:after {
+		clear: both;
+	}
+	[class*="colspan"] {
+		float: left;
+		min-height: 1px;
+	}
+	.container {
+		width: 768px;
+	}
+	.colspan12 {
+		width: 768px;
+	}
+	.colspan11 {
+		width: 704px;
+	}
+	.colspan10 {
+		width: 640px;
+	}
+	.colspan9 {
+		width: 576px;
+	}
+	.colspan8 {
+		width: 512px;
+	}
+	.colspan7 {
+		width: 448px;
+	}
+	.colspan6 {
+		width: 384px;
+	}
+	.colspan5 {
+		width: 320px;
+	}
+	.colspan4 {
+		width: 256px;
+	}
+	.colspan3 {
+		width: 292px;
+	}
+	.colspan2 {
+		width: 128px;
+	}
+	.colspan1 {
+		width: 64px;
+	}
+	.offset12 {
+		margin-left: 768px;
+	}
+	.offset11 {
+		margin-left: 704px;
+	}
+	.offset10 {
+		margin-left: 640px;
+	}
+	.offset9 {
+		margin-left: 576px;
+	}
+	.offset8 {
+		margin-left: 512px;
+	}
+	.offset7 {
+		margin-left: 448px;
+	}
+	.offset6 {
+		margin-left: 384px;
+	}
+	.offset5 {
+		margin-left: 320px;
+	}
+	.offset4 {
+		margin-left: 256px;
+	}
+	.offset3 {
+		margin-left: 192px;
+	}
+	.offset2 {
+		margin-left: 128px;
+	}
+	.offset1 {
+		margin-left: 64px;
+	}
+	.row.fluid {
+		width: 100%;
+		*zoom: 1;
+	}
+	.row.fluid:before,
+	.row.fluid:after {
+		display: table;
+		line-height: 0;
+		content: "";
+	}
+	.row.fluid:after {
+		clear: both;
+	}
+	.row.fluid [class*="colspan"] {
+		display: block;
+		float: left;
+		width: 100%;
+		min-height: 30px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+}
+
+/** Mobile Grid **/
+@media (max-width: 767px) {
+	.container {
+		width: auto;
+	}
+	
+	[class*="colspan"],
+	.row.fluid [class*="colspan"] {
+		display: block;
+		float: none;
+		width: 100%;
+		margin-left: 0;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+}
